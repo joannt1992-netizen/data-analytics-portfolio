@@ -1,0 +1,44 @@
+# Global Superstore Analysis: Python + MySQL + Power BI
+
+## Overview
+This project analyses the Global Superstore dataset to understand sales performance across markets, products and customers.
+Data was cleaned in Python, queried in MySQL, and visualised in a three-page Power BI dashboard.
+
+## Business Questions
+**Sales Overview**
+- What were total sales, profit and margin, and how did they trend over the years?
+- Which product category generates the most sales and profit?
+
+**Product Analysis**
+- Which products drive the most sales, and are they also profitable?
+- Which products lose money, and how much do those losses?
+
+**Customer Analysis**
+- Which customer segment generates the most sales?
+- Which regions generate the highest and lowest sales?
+- How does each segment perform within each region?
+- 
+## Tools
+- MySQL Workbench (database, queries)
+- Power BI (dashboard)
+
+## Dataset
+**Global Superstore dataset, a sample retail dataset from Tableau, also available on Kaggle
+**51,290 rows and 24 columns
+
+## Process
+1. Created tables and imported data in MySQL
+2. Cleaned and analysed with SQL
+3. Built the dashboard in Power BI
+
+## Key Findings
+💰 Total Sales: 12.64M
+📈 Total Profit: 1.47M (11.62% margin)
+📦 Total Orders: 25K
+⚠️ Total Losses: -920K
+🏆 Top Category (2014): Technology (1,616K sales, 14.54% margin)
+🌍 Top Region: Central (about 2.8M)
+👥 Top Segment: Consumer (about 6.5M, roughly half of sales)
+
+## Dashboard
+![Dashboard](images/dashboard.png)
