@@ -1,7 +1,7 @@
-**Data Analyst Portfolio – Joanne Tan**
+**Data Analytics Portfolio – Joanne Tan**
 
 Welcome to my Data Analytics Portfolio.
-This repository showcases my projects in data analysis, using Python, SQL, and Power BI to explore datasets, identify trends and generate business insights.
+I am currently developing my skills in data analytics through hands-on projects using Python, SQL, and Power BI. This portfolio showcases my learning journey, practical analysis, and efforts to turn raw data into meaningful business insights.
 
 **Skills and Tools**
 - Python 
@@ -10,3 +10,8 @@ This repository showcases my projects in data analysis, using Python, SQL, and P
 
 **Projects**
 01. Global Superstore Analysis
+Objective: Analyse sales performance across different markets, products, and customers.
+Activities:
+- Performed data cleaning and transformation using Python.
+- Used MySQL to query and analyse sales data across markets, products, and customers.
+- Developed an interactive dashboard using Power BI to visualise key findings and business insights.
