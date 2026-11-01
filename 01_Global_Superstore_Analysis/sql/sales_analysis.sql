@@ -7,7 +7,7 @@ GROUP BY category;
 
 -- 2. Profit Margin by Category
 SELECT category, SUM(sales) AS total_sales, SUM(profit) AS total_profit,
-ROUND((SUM(profit) / SUM(sales)) * 100, 2) AS profit_margin_percentage
+ROUND((SUM(profit) / SUM(sales)) * 100, 2) AS Profit_Margin_Percentage
 FROM global_superstore.superstore
 GROUP BY category;
 
@@ -49,3 +49,20 @@ END AS Profit_Status
 FROM global_superstore.superstore
 GROUP BY product_name
 ORDER BY product_name;
+
+-- 6. Sales by Region and Segment
+SELECT 
+global_superstore.superstore.region,
+global_superstore.superstore.segment,
+SUM(sales) AS Total_Sales
+FROM global_superstore.superstore
+GROUP BY region, segment
+ORDER BY Total_Sales DESC, region;
+
+-- 7. Sales and Profit by Segment
+SELECT 
+global_superstore.superstore.segment,
+SUM(sales) AS Total_Sales,
+SUM(profit) AS Total_Profit
+FROM global_superstore.superstore
+GROUP BY segment;
