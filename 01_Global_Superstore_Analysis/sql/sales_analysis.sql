@@ -26,3 +26,26 @@ MONTHNAME(order_date)
 ORDER BY
 Sales_Month ASC,
 Sales_Year ASC;
+
+-- 4. Top 10 Best-Selling Products
+SELECT
+global_superstore.superstore.product_name, 
+SUM(sales) AS Total_Sales,
+SUM(profit) AS Total_Profit
+FROM global_superstore.superstore
+GROUP BY product_name
+ORDER BY Total_Sales DESC
+LIMIT 10;
+
+-- 5. Products with Profit and Losses
+SELECT
+global_superstore.superstore.product_name,
+SUM(profit) AS Total_Profit,
+CASE 
+WHEN SUM(profit) > 0 THEN 'Profit'
+WHEN SUM(profit) < 0 THEN 'Losses'
+ELSE 'Break-even'
+END AS Profit_Status
+FROM global_superstore.superstore
+GROUP BY product_name
+ORDER BY product_name;
